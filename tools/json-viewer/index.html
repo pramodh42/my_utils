@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish JSON Viewer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Buttons for navigating between Input and Output, now at the top -->
+    <div class="nav-buttons">
+      <button id="btn-input" onclick="showInput()">JSON Input</button>
+      <button id="btn-output" onclick="showOutput()">JSON Output</button>
+    </div>
+
+    <!-- JSON Input Screen -->
+    <div id="input-screen" class="screen">
+      <h2>Enter Your JSON</h2>
+      <textarea id="json-input" rows="10" placeholder='{"key": "value"}'></textarea>
+    </div>
+
+    <!-- JSON Output Screen -->
+    <div id="output-screen" class="screen">
+      <h2>JSON Output</h2>
+      <div id="json-viewer" class="json-container"></div>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-message" class="error"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
