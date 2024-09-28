@@ -44,6 +44,7 @@ textarea {
   width: 100%;
   padding: 10px;
   font-size: 1em;
+  height:70vh;
   border-radius: 5px;
   border: 1px solid #ccc;
   resize: vertical; /* Allows vertical resizing */
