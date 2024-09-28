@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encoder/Decoder</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Base64 Encoder/Decoder</h1>
+        <div class="mode-selection">
+            <label>
+                <input type="radio" name="mode" value="encode" checked> Encode
+            </label>
+            <label>
+                <input type="radio" name="mode" value="decode"> Decode
+            </label>
+        </div>
+        
+        <div class="input-output">
+            <div>
+                <h3>Input</h3>
+                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            </div>
+            <div class="output-container">
+                <h3>Output 
+                    <i class="fas fa-copy" id="copyIcon" title="Copy to clipboard"></i>
+                </h3>
+                <textarea id="outputText" readonly placeholder="Result will appear here..."></textarea>
+            </div>
+        </div>
+
+        <button id="processBtn">Process</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
